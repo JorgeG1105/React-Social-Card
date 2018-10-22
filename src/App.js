@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './app.css';
-import CardHeader from './Components/CardHeader'
+import CardHeader from './Components/CardHeader';
+import CardBody from './Components/CardBody';
+import CardFooter from './Components/CardFooter';
 
 class App extends Component {
   state = {
@@ -11,7 +13,13 @@ class App extends Component {
 
   render() {
     return (
-      <CardHeader/>
+      <div className='card'>
+        <div className='card-title'>
+          <CardHeader/>
+        </div>
+        <CardBody/>
+        <CardFooter/>
+      </div>
     );
   }
 }

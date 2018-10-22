@@ -1,3 +1,67 @@
-.cardContainer {
+.card {
 	text-align: center;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 20px;
+}
+
+/*---------------Card Header styles-------------------*/
+.cardHeader {
+	display: flex;
+	justify-content: center;
+}
+
+.twitImg {
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.twitName {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.greyText {
+	color: grey;
+	margin-left: 5px;
+	font-size: 16px;
+}
+
+.twitbird {
+	color: #1DA1F2;
+	cursor: pointer;
+	margin-left: 50px;
+}
+/*-----------------Card Body-----------------------*/
+.cardBody {
+	margin: 20px;
+	font-size: 25px;
+}
+/*---------------Card Footer-----------------------*/
+
+.cardFooter {
+	margin-bottom: 20px;
+}
+
+.comment, .retweet, .like {
+	margin: 10px;
+	color: grey;
+}
+
+.comment:hover {
+	transition: all .2s;
+	color: lightblue;
+	cursor: pointer;
+}
+
+.retweet:hover {
+	transition: all .2s;
+	color: green;
+	cursor: pointer;
+}
+
+.like:hover {
+	transition: all .2s;
+	color: pink;
+	cursor: pointer;
 }
